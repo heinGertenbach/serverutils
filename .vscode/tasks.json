@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build and push",
+            "type": "shell",
+            "command": "mvn package; scp c:\\repos\\serverutils\\target\\serverutils-0.1.0.jar jimbo@192.168.0.130:~/minecraft-server/plugins/serverutils-0.1.0.jar",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

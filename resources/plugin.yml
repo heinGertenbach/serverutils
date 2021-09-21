@@ -1,0 +1,17 @@
+name: serverutils
+version: 0.1.0
+api-version: 1.16
+main: com.jimbo.serverutils.Plugin
+commands: 
+  trade: 
+    description: Trade with another player.
+    usage: "/<command> <offer|accept|reject> <player> [item] [count] [request] [count]"
+  start:
+    description: Start your journey.
+    usage: /<command>
+  spawn:  
+    description: Teleport to the world spawn.
+    usage: /<command>
+  home: 
+    description: Teleport to/set your player spawn.
+    usage: /<command> [set|go]
