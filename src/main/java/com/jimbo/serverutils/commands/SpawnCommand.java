@@ -3,6 +3,8 @@ package com.jimbo.serverutils.commands;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jimbo.serverutils.Plugin;
+
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -19,7 +21,7 @@ public class SpawnCommand implements TabExecutor {
     //Run when the commnand is issued
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
-        Location spawn = player.getWorld().getSpawnLocation().add(0.5f, 0f, 0.5f); spawn.setYaw(-90f);
+        Location spawn = Plugin.access.getServer().getWorld("world").getSpawnLocation().add(0.5f, 0f, 0.5f); spawn.setYaw(-90f);
 
         player.teleport(spawn);
         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 1 /*seconds*/ * 20, 10, false, false));
