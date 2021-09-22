@@ -1,5 +1,7 @@
 com\jimbo\serverutils\commands\SpawnCommand.class
 com\jimbo\serverutils\events\PlayerDeath.class
+com\jimbo\serverutils\commands\HomeCommand.class
+com\jimbo\serverutils\events\PlayerDamageByEntity.class
 com\jimbo\serverutils\events\PlayerQuit.class
 com\jimbo\serverutils\commands\StartCommand.class
 com\jimbo\serverutils\Plugin.class
